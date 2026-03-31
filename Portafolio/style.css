@@ -1,0 +1,159 @@
+:root {
+    --deep-blue: #051622;
+    --card-navy: #0b2130;
+    --orange-accent: #f89d38;
+    --text-silver: #e0e6ed;
+    --text-muted: #aab4c3;
+}
+
+body {
+    background-color: var(--deep-blue);
+    color: var(--text-silver);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+a {
+    color: var(--text-silver); 
+    text-decoration: none;     
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: var(--orange-accent); 
+}
+
+
+.link-uide, .github-link, .main-nav a, address a {
+    color: var(--orange-accent);
+}
+
+.main-nav a:hover {
+    filter: brightness(1.2);
+    text-decoration: underline;
+}
+
+
+.quick-contact {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 12px 0;
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgba(248, 157, 56, 0.3);
+}
+
+.quick-contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.quick-contact span {
+    color: var(--orange-accent);
+    font-weight: bold;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.main-name {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.profile-img {
+    width: 180px;
+    height: 250px;
+    border-radius: 10%;
+    border: 3px solid var(--orange-accent);
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 50px;
+}
+
+.highlight {
+    color: var(--orange-accent);
+    font-weight: bold;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-list i {
+    color: var(--orange-accent);
+}
+
+.proyecto-card {
+    display: flex;
+    background-color: var(--card-navy);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.proyecto-content {
+    padding: 25px;
+    flex: 1;
+}
+
+.proyecto-img-container {
+    flex: 1;
+    margin: 0;
+}
+
+.proyecto-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: var(--text-muted);
+}
+
+.social-links a:hover {
+    color: var(--orange-accent);
+}
